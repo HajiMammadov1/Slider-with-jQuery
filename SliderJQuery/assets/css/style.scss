@@ -1,0 +1,41 @@
+body {
+    font-size: 14px;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,118,1) 35%, rgba(0,212,255,1) 100%);
+
+    .container {
+        width: 540px;
+        margin: 40px auto;
+        overflow: auto;
+
+        .images {
+            width: 500px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            padding: 3px;
+            border: #666 solid 1px;
+
+            img {
+                display: none;
+                width: 500px;
+                height: 300px;
+            }
+
+            .active {
+                display: inline-block;
+            }
+        }
+
+        .prev, .next {
+            float: left;
+            margin-top: 130px;
+            cursor: pointer;
+            font-size: 25px;
+            position: relative;
+            z-index: 100;
+        }
+    }
+}
