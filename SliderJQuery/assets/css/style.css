@@ -32,7 +32,7 @@ body .container .images .active {
   display: inline-block;
 }
 
-body .container .prev, body .container .next {
+body .container .prevBtn, body .container .nextBtn {
   float: left;
   margin-top: 130px;
   cursor: pointer;
