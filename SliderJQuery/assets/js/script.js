@@ -8,7 +8,7 @@ $(function () {
         let nextImg = currentImg.next();
         let firstImg = $("div img").first();
        
-        if (nextImg.length > 0) {
+        if (nextImg.length) {
             currentImg.removeClass("active").css("z-index", -10);
             nextImg.addClass("active").css("z-index", 10);
 
@@ -26,7 +26,7 @@ $(function () {
         let currentImg = $(".active");
         let prevImg = currentImg.prev();
 
-        if (prevImg.length > 0) {
+        if (prevImg.length) {
             currentImg.removeClass("active").css("z-index", -10);
             prevImg.addClass("active").css("z-index", 10);
         }else if($("div img").first()) {
